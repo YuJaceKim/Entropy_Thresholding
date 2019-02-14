@@ -94,9 +94,8 @@ def func_1(img):
 	plt.show()
 
 #load the images:
-image_1 = Image.open("for3_1.jpg").convert('L')
+img = Image.open(sys.argv[1])
+img.load()
+img.show()
+image_1 = Image.open(sys.argv[1]).convert('L')
 func_1(image_1)
-image_2 = Image.open("for3_2.jpg").convert('L')
-func_1(image_2)
-image_3 = Image.open("for3_3.jpg").convert('L')
-func_1(image_3)
